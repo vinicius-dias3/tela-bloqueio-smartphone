@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 
+html{
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 body{
     overflow-y: hidden;
     background-color: lightyellow;
@@ -11,10 +16,61 @@ h1 {
     text-align: center;
 }
 
+.container-senha{
+    background: linear-gradient(to bottom, #2F445D, #769089);
+    width: 350px;
+    height: 159px;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    box-shadow: #00000040 0px 14px 20px, #00000038 0px 10px 10px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.container-senha.esconder{display: none;}
+
+.container-senha:hover.erro{
+    box-shadow: #5f0c0c57 0px 14px 20px, #35131338 0px 10px 10px;
+    border: 2px solid rgb(85, 11, 11);
+}
+
+.container-senha .btn-salvar{
+    cursor: pointer;
+    font-weight: 700;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: all .2s linear;
+}
+
+.container-senha .btn-salvar:hover{
+    border: 1px solid #286848;
+    box-shadow: 0px 2px 5px #286848;
+}
+
+.container-senha:hover{
+    border: 2px solid #2F445D;
+    box-shadow: #2F445D 0px 4px 2px;
+}
+
+.container-senha .span{
+    color: darkred;
+    font-weight: 700;
+    display: none;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.container-senha .span.mostrar-span{display: block;}
+
 .smartphone{
-    font-family: 'Nanum Gothic', sans-serif;
     margin: auto;
-    color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 260px;

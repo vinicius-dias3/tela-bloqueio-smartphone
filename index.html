@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Bloqueio - Smartphone</title>
     <link rel="shortcut icon" href="./src/images/cadeado.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="./src/css/reset.css"> -->
+    <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <h1>Tela de Bloqueio - Smartphone</h1>
+    <div class="container-senha">
+        <h4>Configure a senha de bloqueio </h3>
+        <input type="number" name="" id="senha-usuario" placeholder="12345678">
+        <button class="btn-salvar" type="submit">Salvar</button>
+        <span class="span">Configure a senha conforme instrução!</span>
+    </div>
 
     <div class="smartphone">
         <div class="auto-falante"></div>
@@ -25,21 +31,19 @@
                 <i class="far fa-circle"></i>
                 <i class="far fa-circle"></i>
                 <i class="far fa-circle"></i>
-                <!-- <i class="far fa-circle"></i> -->
-                <!-- adicionar a classe fas com JS -->
             </div>
 
             <div class="teclado">
-                <button class="numero um">1</button>
-                <button class="numero dois">2</button>
-                <button class="numero tres">3</button>
-                <button class="numero quatro">4</button>
-                <button class="numero cinco">5</button>
-                <button class="numero seis">6</button>
-                <button class="numero sete">7</button>
-                <button class="numero oito">8</button>
-                <button class="numero nove">9</button>
-                <button class="numero zero">0</button>
+                <button value="1" class="numero um">1</button>
+                <button value="2" class="numero dois">2</button>
+                <button value="3" class="numero tres">3</button>
+                <button value="4" class="numero quatro">4</button>
+                <button value="5" class="numero cinco">5</button>
+                <button value="6" class="numero seis">6</button>
+                <button value="7" class="numero sete">7</button>
+                <button value="8" class="numero oito">8</button>
+                <button value="9" class="numero nove">9</button>
+                <button value="0" class="numero zero">0</button>
                 <button class="emergencia">emergência</button>
                 <button class="voltar">voltar</div>
             </button>
