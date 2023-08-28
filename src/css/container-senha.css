@@ -1,0 +1,44 @@
+.container-senha{
+    background: linear-gradient(to bottom, #2F445D, #768daa);
+    width: 350px;
+    height: 159px;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    box-shadow: #00000040 0px 14px 20px, #00000038 0px 10px 10px;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.container-senha.esconder{display: none;}
+
+.container-senha:hover.erro{
+    box-shadow: #5f0c0c57 0px 14px 20px, #35131338 0px 10px 10px;
+    border: 2px solid rgb(85, 11, 11);
+}
+
+.container-senha .btn-salvar{
+    cursor: pointer;
+    font-weight: 700;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: all .2s linear;
+}
+
+.container-senha .btn-salvar:hover{box-shadow: 3px 5px 15px #2F445D;}
+
+.container-senha .span{
+    color: darkred;
+    font-weight: 700;
+    display: none;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.container-senha .span.mostrar-span{display: block;}

@@ -1,0 +1,32 @@
+.smartphone .tela .teclado{
+    margin-top: 32%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 33px 33px 33px 33px 25px;
+    justify-content: space-evenly;
+    justify-items: center;
+    grid-gap: 10px 5px;
+}
+
+.teclado button{
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    min-width: 80%;
+}
+
+.teclado button:active{
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+}
+
+.teclado button.numero{width: 80%;}
+
+.teclado button[value="0"]{grid-area: 4 / 2 / 5 / 3;}
+
+.teclado button[value="emergencia"]{grid-area: 5 / 1 / 6 / 2;}
+
+.teclado button[value="voltar"]{grid-area: 5 / 3 / 6 / 3;}
