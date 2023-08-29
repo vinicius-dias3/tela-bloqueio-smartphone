@@ -1,8 +1,15 @@
-data = new Date
-let hora = document.querySelector('#hora')
-let minuto = document.querySelector('#minuto')
-hora.innerHTML = data.getHours()
-minuto.innerHTML = data.getMinutes()
+function mostrarHora(){
+    data = new Date
+    let elementoHora = document.querySelector('#hora')
+    let elementoMinuto = document.querySelector('#minuto')
+    let hora = data.getHours().toString().padStart(2,'0')
+    let minuto = data.getMinutes().toString().padStart(2,'0')
+    elementoHora.innerHTML = hora
+    elementoMinuto.innerHTML = minuto
+    setTimeout(mostrarHora, 1000)
+}
+
+mostrarHora()
 
 const senhaUsuario = document.querySelector('#senha-usuario')
 const btnSalvarSenha = document.querySelector('.btn-salvar')
@@ -14,13 +21,15 @@ let numeroDigitado = 0
 let arrayNumeros = []
 let senhaDigitada
 let btnVoltarOuExcluir = document.querySelector('button[value="voltar"]')
+let iconeRolar = document.querySelector('.icone-rolar')
 
-function desbloquearTela(){
+
+iconeRolar.addEventListener('scroll', function (){
     const telaBloqueio = document.querySelector('.tela-bloqueio')
     telaBloqueio.classList.remove('bloquear')
     telaBloqueio.classList.add('desbloquear')
     containerSenha.classList.remove('esconder')
-}
+})
 
 btnSalvarSenha.addEventListener('click', (configurarSenha))
 function configurarSenha(){

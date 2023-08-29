@@ -92,9 +92,15 @@ h1 {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    animation: mover-seta 1.5s ease-in infinite;
+    animation: mover-seta 1.5s ease-out infinite;
     cursor: pointer;
+    height: 49px;
+    overflow-y: scroll;
 }
+
+.icone-rolar::-webkit-scrollbar{width: 2px;}
+
+.icone-rolar::-webkit-scrollbar-track{background-color: transparent;}
 
 @keyframes mover-seta{
     15%{
