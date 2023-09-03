@@ -1,15 +1,5 @@
-function mostrarHora(){
-    data = new Date
-    let elementoHora = document.querySelector('#hora')
-    let elementoMinuto = document.querySelector('#minuto')
-    let hora = data.getHours().toString().padStart(2,'0')
-    let minuto = data.getMinutes().toString().padStart(2,'0')
-    elementoHora.innerHTML = hora
-    elementoMinuto.innerHTML = minuto
-    setTimeout(mostrarHora, 1000)
-}
-
-mostrarHora()
+import {mostrarDataEHora} from "./mostrarDataEHora.js"
+mostrarDataEHora()
 
 const senhaUsuario = document.querySelector('#senha-usuario')
 const btnSalvarSenha = document.querySelector('.btn-salvar')
@@ -22,7 +12,6 @@ let arrayNumeros = []
 let senhaDigitada
 let btnVoltarOuExcluir = document.querySelector('button[value="voltar"]')
 let iconeRolar = document.querySelector('.icone-rolar')
-
 
 iconeRolar.addEventListener('scroll', function (){
     const telaBloqueio = document.querySelector('.tela-bloqueio')

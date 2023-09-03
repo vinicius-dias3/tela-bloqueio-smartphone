@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/container-senha.css">
     <link rel="stylesheet" href="./src/css/teclado.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/estilo-geral.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <h1>Tela de Bloqueio</h1>
     <div class="container-senha esconder">
         <h4>Configure a senha de bloqueio </h3>
-        <input type="number" name="" id="senha-usuario" placeholder="12345678">
+        <input type="number" id="senha-usuario" placeholder="ex: 12345678">
         <button class="btn-salvar" type="submit">Salvar</button>
         <span class="span">Configure a senha conforme instrução!</span>
     </div>
@@ -23,8 +23,9 @@
     <div class="smartphone">
         <div class="auto-falante"></div>
         <div class="tela-bloqueio bloquear">
-            <p id="hora">10</p>
-            <p id="minuto">20</p>
+            <p id="elemento-hora">10</p>
+            <p id="elemento-minuto">20</p>
+            <p id="elemento-dia">dia da semana, XX/XX</p>
             <div class="icone-rolar">
                 <i class="fas fa-chevron-up"></i>
                 <i class="fas fa-chevron-up"></i>
@@ -64,7 +65,7 @@
     
 
 
-    <script src="./src/js/index.js"></script>
+    <script type="module" src="./src/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
