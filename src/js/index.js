@@ -14,6 +14,7 @@ let btnVoltarOuExcluir = document.querySelector('button[value="voltar"]')
 let iconeRolar = document.querySelector('.icone-rolar')
 
 iconeRolar.addEventListener('scroll', function (){
+    // console.log(iconeRolar)
     const telaBloqueio = document.querySelector('.tela-bloqueio')
     telaBloqueio.classList.remove('bloquear')
     telaBloqueio.classList.add('desbloquear')

@@ -12,5 +12,5 @@ export function mostrarDataEHora(){
     elementoMinuto.innerHTML = minuto
     let diaDoMes = data.getDate().toString().padStart(2,'0')
     elementoDia.innerHTML = `${semana[diaSemana]}, ${diaDoMes}/${mesDoAno}`
-    setTimeout(mostrarHora, 1000)
+    setTimeout(mostrarDataEHora, 1000)
 }
