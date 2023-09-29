@@ -1,8 +1,8 @@
-import {mostrarDataEHora} from "./mostrarDataEHora.js"
+import {mostrarDataEHora} from "/src/js/mostrarDataEHora.js"
 mostrarDataEHora()
+import {testarSenha} from "/src/js/testarSenha.js"
 
 const senhaUsuario = document.querySelector('#senha-usuario')
-const btnSalvarSenha = document.querySelector('.btn-salvar')
 const containerSenha = document.querySelector('.container-senha')
 let tamanhoSenhaUsuario
 let senhaUsuarioGravada
@@ -14,14 +14,14 @@ let btnVoltarOuExcluir = document.querySelector('button[value="voltar"]')
 let iconeRolar = document.querySelector('.icone-rolar')
 
 iconeRolar.addEventListener('scroll', function (){
-    // console.log(iconeRolar)
+    console.log(iconeRolar)
     const telaBloqueio = document.querySelector('.tela-bloqueio')
     telaBloqueio.classList.remove('bloquear')
     telaBloqueio.classList.add('desbloquear')
     containerSenha.classList.remove('esconder')
 })
 
-btnSalvarSenha.addEventListener('click', (configurarSenha))
+document.querySelector('.btn-salvar').addEventListener('click', (configurarSenha))
 function configurarSenha(){
     const msgErro = document.querySelector('.span')
     if(senhaUsuario.value.length === 8){
@@ -49,7 +49,7 @@ numeros.forEach((numero)=> {
         if(arrayNumeros.length === 8){
             senhaDigitada = arrayNumeros.join('')
             console.log(senhaDigitada)
-            testarSenha()
+            testarSenha(senhaUsuarioGravada, senhaDigitada)
         }
         if(numeroDigitado < iconeSenhas.length){
             iconeSenhas[numeroDigitado].classList.remove('far')            
@@ -74,24 +74,5 @@ function excluirSenha(){
     if(numeroDigitado === 0){
         btnVoltarOuExcluir.removeEventListener('click', excluirSenha)
         btnVoltarOuExcluir.innerHTML = 'voltar'
-    }
-}
-
-function testarSenha(){
-    let smartphone = document.querySelector('.smartphone')
-    const tela = document.querySelector('.tela')
-    let msgErro = document.querySelector('.msg-erro')
-    if(senhaUsuarioGravada === senhaDigitada){
-        smartphone.classList.remove('animacao-erro-senha')
-        msgErro.classList.remove('mostrar-msg')
-        msgErro.classList.add('esconder-msg')
-        tela.classList.add('desbloqueada')
-        while(tela.firstChild){
-            tela.removeChild(tela.firstChild)
-        }
-    }else{
-        smartphone.classList.add('animacao-erro-senha')
-        msgErro.classList.remove('esconder-msg')
-        msgErro.classList.add('mostrar-msg')
     }
 }
