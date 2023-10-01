@@ -1,6 +1,5 @@
 let date = new Date()
 const timeData = {
-    date: new Date(),
     hour:   date.getHours()
             .toString()
             .padStart(2,'0'),

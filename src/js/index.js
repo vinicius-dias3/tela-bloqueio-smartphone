@@ -36,7 +36,6 @@ document.querySelector('#senha-usuario').addEventListener('keyup',(e) => {
 document.querySelector('.btn-salvar').addEventListener('click', (setPassword))
 
 //CONFIRMAR SE FUNCIONA CORRETAMENTE SE PASSAR A FUNCAO SETPASSWORD PARA OUTRO ARQUIVO E IMPORTA-LA
-//INSERIR EVENTO DO TECLADO, PARA ENVIAR FORMULÁRIO COM O ENTER
 
 function setPassword(){
     let msgErro = document.querySelector('.span')
