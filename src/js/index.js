@@ -1,6 +1,6 @@
-import { showDateAndTime } from "/src/js/showDateAndTime.js"
-import { passwordData } from "/src/js/passwordData.js"
-import {passwordTesting} from "/src/js/passwordTesting.js"
+import { showDateAndTime } from "./showDateAndTime.js"
+import { passwordData } from "./passwordData.js"
+import {passwordTesting} from "./passwordTesting.js"
 
 showDateAndTime()
 

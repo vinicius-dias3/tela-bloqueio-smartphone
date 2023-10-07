@@ -1,4 +1,4 @@
-import { timeData } from "/src/js/objects/timeData.js"
+import { timeData } from "./objects/timeData.js"
 
 export function showDateAndTime(){
     let hourElement = document.querySelector('#elemento-hora')

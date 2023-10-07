@@ -1,4 +1,4 @@
-import { getPasswordData } from "/src/js/passwordData.js"
+import { getPasswordData } from "./passwordData.js"
 
 const passwordData = getPasswordData()
 
