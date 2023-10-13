@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="./src/images/cadeado.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/container-senha.css">
-    <link rel="stylesheet" href="./src/css/teclado.css">
+    <link rel="stylesheet" href="./src/css/keyboard.css">
     <link rel="stylesheet" href="./src/css/estilo-geral.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -15,14 +15,14 @@
     <h1>Tela de Bloqueio</h1>
     <div class="container-senha esconder">
         <h4>Configure a senha de bloqueio </h3>
-        <input type="number" id="senha-usuario" placeholder="ex: 12345678">
+        <input type="number" id="password-user" placeholder="ex: 12345678">
         <button class="btn-salvar" type="submit">Salvar</button>
         <span class="span">Configure a senha conforme instrução!</span>
     </div>
 
     <div class="smartphone">
         <div class="auto-falante"></div>
-        <div class="tela-bloqueio bloquear">
+        <div class="lock-screen lock">
             <p id="elemento-hora">10</p>
             <p id="elemento-minuto">20</p>
             <p id="elemento-dia">dia da semana, XX/XX</p>
@@ -31,10 +31,10 @@
                 <i class="fas fa-chevron-up"></i>
             </div>
         </div>
-        <div class="tela">
+        <div class="screen">
             <h3>Usar senha para desbloquear</h3>
-            <span class="msg-erro esconder-msg">senha incorreta</span>
-            <div class="senha">
+            <span class="msg-erro hide-msg">senha incorreta</span>
+            <div class="password">
                 <i class="far fa-circle"></i>
                 <i class="far fa-circle"></i>
                 <i class="far fa-circle"></i>
@@ -45,7 +45,7 @@
                 <i class="far fa-circle"></i>
             </div>
 
-            <div class="teclado">
+            <div class="keyboard">
                 <button value="1" class="numero">1</button>
                 <button value="2" class="numero">2</button>
                 <button value="3" class="numero">3</button>
